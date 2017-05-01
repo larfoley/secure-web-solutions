@@ -1,0 +1,25 @@
+.section {
+  padding: 4em 0;
+
+  & > h1, & .container > h1,
+  & > h1, & .container > h2,
+  & > h1, & .container > h3,
+  & > h1, & .container > h4,
+  & > h1, & .container > h5,
+  & > h1, & .container > h6, {
+    margin-top: 0 !important;
+  }
+
+  &.small {
+    padding: 2em 0;
+  }
+
+  &.large {
+    padding: 7em 0;
+  }
+
+  &.xtra-large {
+    padding: 15em 0;
+  }
+
+}

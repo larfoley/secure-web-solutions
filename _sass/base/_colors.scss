@@ -1,0 +1,42 @@
+// -----------------------------
+// Create a class for each color
+// -----------------------------
+//
+// .color__red {
+//   color: red;
+// }
+//
+// .blue {
+//   background-color: blue;
+// }
+//
+//
+@each $color, $value in $colors {
+
+  .#{$color}-text {
+    color: $value;
+  }
+
+  .#{$color} {
+    background-color: $value;
+  }
+
+  @if $color != "white" {
+    .#{$color}text--light {
+      color: lighten($value, 20%);
+    }
+    .#{$color}--light {
+      background-color: lighten($value, 20%);
+    }
+  }
+
+  @if $color != "black" {
+    .#{$color}text--dark {
+      color: darken($value, 20%);
+    }
+    .#{$color}--dark {
+      background-color: darken($value, 20%);
+    }
+  }
+
+}

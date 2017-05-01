@@ -1,0 +1,45 @@
+// Font Styles
+//------------------------------------------------------------------------------
+
+$font-size: 16px;
+$font-stack: "Helvetica", "Tahoma", "Verdana", sans-serif;
+$line-height: 1.5;
+$text-size: 1.2em;
+
+// Container
+//------------------------------------------------------------------------------
+
+$container-max-width: 90%;
+$container-width: 1100px;
+
+
+// Colors
+//------------------------------------------------------------------------------
+
+$colors: (
+  "primary-color": #35D7BB,
+  "secondary-color": #2a2f4a,
+  "text-color": gray,
+  "lightgray": #f5f5f5,
+  "red": #E74C3C,
+  "green": #2ECC71,
+  "blue": #0366d6,
+  "white": #fff,
+  "black": #000,
+  "gray": #808080,
+  "brightgray": #373D49,
+  "radical-red": #FF3366,
+);
+// NOTE: all color here will be available with in the color function
+
+
+// Media Queries
+//------------------------------------------------------------------------------
+$mq-small: "screen and (min-width: 350px)";
+$mq-medium: "screen and (min-width: 700px)";
+$mq-large: "screen and (min-width: 1000px)";
+$mq: $mq-medium;
+// Usage:
+// @media #{$mq-small} {
+//
+// }

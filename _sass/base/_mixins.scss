@@ -1,0 +1,15 @@
+@mixin box-shadow(
+  $x: 2px,
+  $y: 2px,
+  $blur: 3px,
+  $spread: 0,
+  $color: gray
+  ) {
+  box-shadow: $x $y $blur $spread $color;
+}
+
+@mixin bgImg($imgSrc) {
+  background-image: url($imgSrc);
+  background-position: center;
+  background-size: cover;
+}

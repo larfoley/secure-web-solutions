@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+  font-family: $font-stack;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+img, iframe {
+  max-width: 100%;
+}
+
+p {
+  color: color('text-color');
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+pre {
+  background-color: #f5f5f5;
+  color: gray;
+  padding: 0 2em;
+  overflow: scroll;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.browserupgrade, .noscript {
+  padding: 1em;
+  text-align: center;
+  background: #E74C3C;
+  color: white;
+  margin-bottom: 1em;
+}

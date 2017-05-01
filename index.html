@@ -1,0 +1,88 @@
+---
+layout: page
+title: Home
+---
+
+<section class="black section white-text xtra-large hero">
+  <div class="container text-center fadein">
+    <h1 class="margin-none">{{site.title}}</h1>
+    <p class="white-text lead-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <br>
+    <button class="btn btn-primary" type="button" name="button">
+      Get in Touch
+    </button>
+      &nbsp;&nbsp;
+    <button class="btn btn-secondary" type="button" name="button">
+      Our Work
+    </button>
+  </div>
+</section>
+
+<section class="section large">
+  <div class="container text-center">
+    <h2>About</h2>
+    <div class="grid">
+      <div class="grid__col grid__col--3-of-5 grid__col--centered">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <section class="section">
+
+        <div class="grid">
+          <div class="grid__col grid__col--1-of-3 text-center">
+            <div class="circular-icon">
+              <i class="fa fa-code fa-3x primary-color-text" aria-hidden="true"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+          <div class="grid__col grid__col--1-of-3 text-center">
+            <div class="circular-icon">
+              <i class="fa fa-rocket fa-3x blue-text" aria-hidden="true"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+          <div class="grid__col grid__col--1-of-3 text-center">
+            <div class="circular-icon">
+              <i class="fa fa-shield fa-3x red-text" aria-hidden="true"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+        </div>
+    </section>
+  </div>
+</section>
+
+<section class="section large secondary-color">
+  <div class="container container-small">
+    <h2 class="white-text text-left">Get In Touch</h2>
+    <form class="contact-form" action="index.html" method="post">
+      <div class="grid">
+        <div class="grid__col grid__col--1-of-2">
+          <label for="">Name</label>
+          <input type="text" name="" value="">
+        </div>
+        <div class="grid__col grid__col--1-of-2">
+          <label for="">Email</label>
+          <input type="text" name="" value="">
+        </div>
+      </div>
+      <label for="">Message</label>
+      <textarea name="name" rows="8" cols="80"></textarea>
+      <button class="btn btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<script type="text/javascript">
+  (function() {
+
+    var form = document.querySelector('.contact-form');
+
+    function onFormSubmit(e) {
+      e.preventDefault();
+    }
+
+    form.addEventListener('submit', onFormSubmit)
+
+  }())
+</script>

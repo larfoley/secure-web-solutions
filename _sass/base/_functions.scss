@@ -1,0 +1,17 @@
+@function color($color) {
+  @return map-get($colors, $color);
+  // Usage:
+  // .foo {
+  //  color: color("color-name")
+  // }
+  // NOTE: The color name you give the function must be in the colors array,
+  //       which can be found in sass/base/_colors.scss
+}
+
+@function vars() {}
+
+$vars: (
+  "globals": (
+    "foo": 3
+  )
+)

@@ -1,0 +1,23 @@
+form {
+  color: white;
+}
+input[type="text"], textarea {
+  color: white;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #D1D1D1;
+  border: none;
+  padding: 1em .7em;
+  border-radius: 4px;
+  outline: none;
+  margin-bottom: 1.2em;
+  background-color: lighten(color('secondary-color'), 5%);
+
+  &:focus {
+    border-color: color('blue');
+  }
+}
+
+label {
+  color: white;
+}

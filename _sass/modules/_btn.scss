@@ -1,0 +1,103 @@
+.btn {
+  display: inline-block;
+  padding: 12px 17px;
+  min-width: 150px;
+  color: white;
+  font-weight: bold;
+  transition: .3s;
+  margin-bottom: 1em;
+
+  &-rounded {
+    border-radius: 5px;
+  }
+
+}
+
+a.btn {
+  text-decoration: none;
+}
+
+.btn:not(a):hover {
+  cursor: pointer;
+}
+
+//========================================
+// Default Button
+//========================================
+
+.btn-default {
+  background-color: color('lightgray');
+  color: gray;
+
+  &:hover {
+    background-color: darken(color('lightgray'), 9%);
+  }
+}
+
+//========================================
+// Primary Button
+//========================================
+
+.btn-primary {
+  background-color: color('primary-color');
+
+  &:hover {
+    background-color: lighten(color('primary-color'), 9%);
+  }
+}
+
+//========================================
+// Secondary Button
+//========================================
+
+.btn-secondary {
+  // outline: 2px solid color('primary-color');
+  box-shadow: inset 0 0 0 2px color('primary-color');
+  background-color: rgba(0,0,0, 0);
+
+  &:hover {
+    background-color: lighten(color('primary-color'), 9%);
+  }
+}
+
+//========================================
+// Success Button
+//========================================
+
+.btn-success {
+  background-color: color('green');
+
+  &:hover {
+    background-color: lighten(color('green'), 9%);
+  }
+}
+
+//========================================
+// Warning Button
+//========================================
+
+.btn-warning {
+  background-color: color('red');
+
+  &:hover {
+    background-color: lighten(color('red'), 9%);
+  }
+}
+
+//========================================
+// Cta Button
+//========================================
+
+.btn-cta {
+  border: 3px solid color('primary-color');
+  background-color: white;
+  color: gray;
+  padding: 20px 60px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: color('primary-color');
+    color: white;
+  }
+}
