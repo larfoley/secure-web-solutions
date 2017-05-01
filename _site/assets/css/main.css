@@ -1196,7 +1196,7 @@ body.sidebar-is-visible {
       left: 0; } }
 
 .hero {
-  background-image: url("/assets/img/hero.jpg");
+  background-image: url("/secure-web-solutions/assets/img/hero.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
