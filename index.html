@@ -59,7 +59,7 @@ title: Home
       <div class="grid">
         <div class="grid__col grid__col--1-of-2">
           <label for="">Name</label>
-          <input type="email" name="email" placeholder="Your email">
+          <input type="text" name="email" placeholder="">
         </div>
         <div class="grid__col grid__col--1-of-2">
           <label for="">Email</label>
@@ -74,7 +74,7 @@ title: Home
       <!-- <input type="hidden" name="_next" value="//site.io/thanks.html" /> -->
 
       <label for="">Message</label>
-      <textarea name="message" placeholder="Your message"></textarea>
+      <textarea name="message" placeholder=""></textarea>
       <button type="submit" class="btn btn-primary">Send Message</button>
     </form>
   </div>
@@ -90,6 +90,23 @@ title: Home
     }
 
     form.addEventListener('submit', onFormSubmit)
+
+
+    var imgIndex = 0;
+    var hero = document.querySelector('.hero');
+    hero.addEventListener('click', changeImg);
+
+    function changeImg() {
+      console.log("changing img", hero);
+      if (imgIndex < 4) {
+        imgIndex ++
+      } else {
+        imgIndex = 0;
+      }
+
+      hero.style.backgroundImage = "url('/secure-web-solutions/assets/img/hero-" + imgIndex + ".jpg')";
+
+    }
 
   }())
 </script>
