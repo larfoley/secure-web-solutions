@@ -1,0 +1,13 @@
+.services-list {
+  li {
+    margin-bottom: 1em;
+    // border: 1px solid color('green');
+    background-color: white;
+    color: color('text-color');
+    font-weight: bold;
+    padding: 1em;
+  }
+  i{
+    color: color('green')
+  }
+}

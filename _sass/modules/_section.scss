@@ -23,3 +23,18 @@
   }
 
 }
+
+.section-title {
+  font-weight: bold;
+  font-size: 3em;
+
+  &:after {
+    content: "";
+    height: 10px;
+    display: block;
+    width: 110px;
+    margin: auto;
+    background-color: color('primary-color');
+    margin-bottom: 1em;
+  }
+}
